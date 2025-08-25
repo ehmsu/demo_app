@@ -13,6 +13,8 @@ button_stylesheet = ("""
         background-color: #173a57; 
         color: white;
         font-weight: bold;
+        font-family: Arial;
+        font-size: 24px;
         border-radius: 10px;
         padding: 10px;
     }
@@ -313,6 +315,7 @@ if __name__ == "__main__":
 
     # Create a stacked widget
     stacked_widget = QStackedWidget()
+    stacked_widget.setWindowTitle("Affordable Housing Data Explorer")
 
     # Create pages
     main_page = AddressLookupApp(stacked_widget)
